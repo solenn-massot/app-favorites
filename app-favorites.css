@@ -69,6 +69,7 @@ img:hover{
     font-family: 'lemonmilkregular';
     font-size:20px;
     text-align: center;
+    color:#666463;
 }
 span{
     font-family: 'caviar_dreamsregular';
@@ -77,9 +78,10 @@ span{
 }
 .lien{
     text-decoration: none;
+    color:#666463;
 }
 .lien:hover{
-    color:
+    color:#3F2B75;
 }
 .lien2{
     font-family: 'lemonmilkregular';
@@ -88,9 +90,10 @@ span{
     text-align: center;
     font-size:12px;
     text-decoration: none;
+    color:#666463;
 }
 .lien2:hover{
-    color:
+    color:#3F2B75;
 }
 /*-------------INSTAGRAM-------------*/
 #instagram{

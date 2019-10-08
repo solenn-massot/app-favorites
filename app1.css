@@ -1,0 +1,139 @@
+/*----------FONT-----------*/
+@font-face {
+    font-family: 'geosanslight';
+    src: url('polices/app1/GeosansLight.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'quicksand_book';
+    src: url('polices/app1/Quicksand_Book.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'bebaskai';
+    src: url('polices/app1/BebasKai.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+/*------------------GRID---------------*/
+body{
+    display: grid;
+    grid-template-columns: [one] auto [two] 30% [three] auto [four]30% [five] auto [six]30% auto;
+    grid-template-rows: [un] 5% [deux] 40% [trois] 5% [quatre] 40% [cinq] 5% [six]40% auto;
+    background-color:rgb(122, 50, 122);
+}
+/*--------------IMAGES------------*/
+.capt{
+    width: 330px;
+    height:160px;
+    padding-left:20px;
+}
+#logoimg{
+    width:150px;
+    height:150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:60px;
+}
+/*---------CASES---------------*/
+#header{
+    grid-column-start: two;
+    grid-column-end: three;
+    grid-row-start: deux;
+    grid-row-end: trois;
+    justify-self: stretch;
+    background-color:rgba(255, 255, 255, 0.514);
+    font-family: 'geosanslight';
+    font-size:35px;
+    text-align: center;
+    border-radius:5px;
+
+}
+#titre{
+    grid-column-start: four;
+    grid-column-end: five;
+    grid-row-start: deux;
+    grid-row-end: trois;
+    justify-self: stretch;
+    font-size:75px;
+    text-align: center;
+    margin-top:100px;
+    font-family: 'bebaskai';
+}
+#logo{
+    grid-column-start: six;
+    grid-column-end: auto;
+    grid-row-start: deux;
+    grid-row-end: trois;
+    justify-self: stretch;
+    background-color:rgba(255, 255, 255, 0.514);
+    border-radius:5px;
+}
+#captures1{
+    grid-column-start: two;
+    grid-column-end: three;
+    grid-row-start: quatre;
+    grid-row-end: cinq;
+    justify-self: stretch;
+    align-self:center;
+}
+#description{
+    grid-column-start: four;
+    grid-column-end: five;
+    grid-row-start: quatre;
+    grid-row-end: cinq;
+    justify-self: stretch;
+    background-color:rgba(255, 255, 255, 0.514);
+    padding-top:70px;
+    border-radius:5px;
+}
+#captures2{
+    grid-column-start: six;
+    grid-column-end: auto;
+    grid-row-start: quatre;
+    grid-row-end: cinq;
+    justify-self: stretch;
+    align-self:center;
+}
+#aime{
+    grid-column-start: two;
+    grid-column-end: three;
+    grid-row-start: six;
+    grid-row-end: auto;
+    justify-self: stretch;
+    background-color:rgba(255, 255, 255, 0.514);
+    border-radius:5px;
+}
+#captures3{
+    grid-column-start: four;
+    grid-column-end: five;
+    grid-row-start: six;
+    grid-row-end: auto;
+    justify-self: stretch;
+    padding-top:60px;
+}
+#pourquoi{
+    grid-column-start: six;
+    grid-column-end: auto;
+    grid-row-start: six;
+    grid-row-end: auto;
+    justify-self: stretch;
+    background-color:rgba(255, 255, 255, 0.514);
+    border-radius:5px;
+}
+/*-------------GENERAL------------*/
+span{
+    font-family: 'geosanslight';
+    display: block;
+    text-align:center;
+    font-size: 15px;
+}
+.question{
+    font-family: 'geosanslight';
+    display:block;
+    text-align: center;
+    font-size: 30px;
+}
