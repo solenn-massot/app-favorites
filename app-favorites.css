@@ -18,6 +18,7 @@ body{
     display: grid;
     grid-template-columns: [one] 10% [two] 10% [three] 25% [four] 25% [five] 25% [six] 5%;
     grid-template-rows: [un] 5% [deux] 30% [trois] 30% [quatre] 30% auto [cinq] 5%;
+    background-color:#B3B3B3;
 }
 /*--------------HEADER-----------*/
 header{
@@ -36,14 +37,60 @@ header{
     padding-top:13px;
     position:fixed;
 }
+/*-----
+-------------GENERAL----------------*/
 img{
-    width:50px;
-    height:50px;
+    width:70px;
+    height:70px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px;
 }
-/*------------------GENERAL----------------*/
+img:hover{
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
 .titre{
     font-family: 'lemonmilkregular';
     font-size:20px;
+    text-align: center;
+}
+span{
+    font-family: 'caviar_dreamsregular';
+    font-size:15px;
+    text-align: left;
+}
+.lien{
+    text-decoration: none;
+}
+.lien:hover{
+    color:
+}
+.lien2{
+    font-family: 'lemonmilkregular';
+    font-weight: lighter;
+    display: block;
+    text-align: center;
+    font-size:12px;
+    text-decoration: none;
+}
+.lien2:hover{
+    color:
 }
 /*-------------INSTAGRAM-------------*/
 #instagram{
@@ -52,6 +99,12 @@ img{
     grid-row-start: deux;
     grid-row-end: trois;
     justify-self: stretch;
+    padding-right: 15px;
+    opacity:0.25;
+}
+#instagram:hover{
+    opacity: 1.0;
+    transition: opacity 1s ease-out;
 }
 /*-------------TWITCH------------*/
 #twitch{
@@ -60,6 +113,12 @@ img{
     grid-row-start: deux;
     grid-row-end:trois;
     justify-self: stretch;
+    padding-right: 15px;
+    opacity:0.25;
+}
+#twitch:hover{
+    opacity: 1.0;
+    transition: opacity 1s ease-out;
 }
 /*--------------TWITTER-------------*/
 #twitter{
@@ -68,6 +127,11 @@ img{
     grid-row-start: deux;
     grid-row-end: trois;
     justify-self: stretch;
+    opacity:0.25;
+}
+#twitter:hover{
+    opacity: 1.0;
+    transition: opacity 1s ease-out;
 }
 /*----------------CANVA-----------*/
 #canva{
@@ -76,6 +140,12 @@ img{
     grid-row-start: quatre;
     grid-row-end: cinq;
     justify-self: center;
+    padding-right: 15px;
+    opacity:0.25;
+}
+#canva:hover{
+    opacity: 1.0;
+    transition: opacity 1s ease-out;
 }
 /*-------------------DISCORD---------------*/
 #discord{
@@ -84,6 +154,12 @@ img{
     grid-row-start: quatre;
     grid-row-end: cinq;
     justify-self: center;
+    padding-right: 15px;
+    opacity:0.25;
+}
+#discord:hover{
+    opacity: 1.0;
+    transition: opacity 1s ease-out;
 }
 /*-------------------MESSENGER------------*/
 #messenger{
@@ -92,4 +168,10 @@ img{
     grid-row-start: quatre;
     grid-row-end: cinq;
     justify-self: center;
+    padding-right: 15px;
+    opacity:0.25;
+}
+#messenger:hover{
+    opacity: 1.0;
+    transition: opacity 1s ease-out;
 }
