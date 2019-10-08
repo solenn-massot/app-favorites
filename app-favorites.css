@@ -1,16 +1,95 @@
 /*-------FONT---------*/
 @font-face {
     font-family: 'caviar_dreamsregular';
-    src: url('caviardreams-webfont.woff2') format('woff2'),
-         url('caviardreams-webfont.woff') format('woff');
+    src: url('polices/caviardreams-webfont.woff2') format('woff2'),
+         url('polices/caviardreams-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'lemonmilkregular';
-    src: url('lemonmilk-webfont.woff2') format('woff2'),
-         url('lemonmilk-webfont.woff') format('woff');
+    src: url('polices/lemonmilk-webfont.woff2') format('woff2'),
+         url('polices/lemonmilk-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 /*--------GRID--------*/
+body{
+    display: grid;
+    grid-template-columns: [one] 10% [two] 10% [three] 25% [four] 25% [five] 25% [six] 5%;
+    grid-template-rows: [un] 5% [deux] 30% [trois] 30% [quatre] 30% auto [cinq] 5%;
+}
+/*--------------HEADER-----------*/
+header{
+    background-color:#666463;
+    grid-column-start: one;
+    grid-column-end: two;
+    grid-row-start: un;
+    grid-row-end:cinq;
+    justify-self:stretch;
+    font-family: 'lemonmilkregular';
+    color:#B3B3B3;
+    font-size:14px;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    height:100vw;
+    padding-top:13px;
+    position:fixed;
+}
+img{
+    width:50px;
+    height:50px;
+}
+/*------------------GENERAL----------------*/
+.titre{
+    font-family: 'lemonmilkregular';
+    font-size:20px;
+}
+/*-------------INSTAGRAM-------------*/
+#instagram{
+    grid-column-start: three;
+    grid-column-end: four;
+    grid-row-start: deux;
+    grid-row-end: trois;
+    justify-self: stretch;
+}
+/*-------------TWITCH------------*/
+#twitch{
+    grid-column-start:four;
+    grid-column-end: five;
+    grid-row-start: deux;
+    grid-row-end:trois;
+    justify-self: stretch;
+}
+/*--------------TWITTER-------------*/
+#twitter{
+    grid-column-start:five;
+    grid-column-end: six;
+    grid-row-start: deux;
+    grid-row-end: trois;
+    justify-self: stretch;
+}
+/*----------------CANVA-----------*/
+#canva{
+    grid-column-start: three;
+    grid-column-end: four;
+    grid-row-start: quatre;
+    grid-row-end: cinq;
+    justify-self: center;
+}
+/*-------------------DISCORD---------------*/
+#discord{
+    grid-column-start: four;
+    grid-column-end: five;
+    grid-row-start: quatre;
+    grid-row-end: cinq;
+    justify-self: center;
+}
+/*-------------------MESSENGER------------*/
+#messenger{
+    grid-column-start: five;
+    grid-column-end: six;
+    grid-row-start: quatre;
+    grid-row-end: cinq;
+    justify-self: center;
+}
