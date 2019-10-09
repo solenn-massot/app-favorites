@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'couture-bld';
+    src: url('polices/couture-bld.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Sansation_Regular';
+    src: url('polices/Sansation_Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
