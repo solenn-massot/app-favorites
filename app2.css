@@ -1,0 +1,90 @@
+/*----------FONTS------------*/
+@font-face {
+    font-family: 'SciFly-Sans';
+    src: url('polices/SciFly-Sans.ttf') format('TrueType');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Coyote-SemiBoldDEMO';
+    src: url('polices/Coyote-SemiBoldDEMO.ttf') format('TrueType');
+    font-weight: normal;
+    font-style: normal;
+}
+/*---------HEADER----------*/
+header{
+    background-color:grey;
+    font-family: 'Coyote-SemiBoldDEMO';
+    font-size:14px;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    position: fixed;
+    height:100%;
+    padding-top: 12px;
+    display: flex;
+    flex-basis: 10%;
+    left:0;
+    
+}
+#header2{
+    background-color:grey;
+    font-family: 'Coyote-SemiBoldDEMO';
+    font-size:14px;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    position: fixed;
+    height:100%;
+    padding-top: 150px;
+    display: flex;
+    flex-basis: 10%;
+}
+/*---------BODY--------*/
+body{
+    display: flex;
+    background-color: rgb(61, 61, 61);
+}
+/*----------IMAGES---------*/
+.capt{
+    width:540px;
+    height:1080px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+.img{
+    display: inline-block;
+}
+#twutter{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+}
+/*-----------TEXT----------*/
+span{
+    display: block;
+    font-family: 'SciFly-Sans';
+    font-size:20px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 30px;
+}
+h1{
+        position: relative;
+        overflow: hidden;
+        background: linear-gradient(95deg, grey, black, grey);
+        background-repeat: no-repeat;
+        background-size: 80%;
+        animation: animate 3s linear infinite;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: rgba(255, 255, 255, 0);
+      }
+      
+      @keyframes animate {
+        0% {
+          background-position: -500%;
+        }
+        100% {
+          background-position: 500%;
+        }
+      }
