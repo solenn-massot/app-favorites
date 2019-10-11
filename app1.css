@@ -28,7 +28,7 @@ body{
 .capt{
     width: 216px;
     height:432px;
-    padding-left:20px;
+    padding-left:75px;
 }
 .capt:hover{
     animation: shake 1s ;
@@ -53,7 +53,7 @@ body{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top:60px;
+    margin-top:170px;
 }
 #logoimg:hover{
     animation: rotate 0.5s ;
@@ -85,6 +85,7 @@ body{
     font-size:35px;
     text-align: center;
     border-radius:5px;
+    padding-top:130px;
 
 }
 #titre{
@@ -95,7 +96,7 @@ body{
     justify-self: stretch;
     font-size:75px;
     text-align: center;
-    margin-top:100px;
+    margin-top:220px;
     font-family: 'bebaskai';
     transition: transform 1s linear;
     animation: appear 1s ;
@@ -140,7 +141,7 @@ body{
     grid-row-end: cinq;
     justify-self: stretch;
     background-color:rgba(255, 255, 255, 0.514);
-    padding-top:70px;
+    padding-top:180px;
     border-radius:5px;
 }
 #captures2{
@@ -159,6 +160,7 @@ body{
     justify-self: stretch;
     background-color:rgba(255, 255, 255, 0.514);
     border-radius:5px;
+    padding-top:90px;
 }
 #captures3{
     grid-column-start: four;
@@ -176,17 +178,29 @@ body{
     justify-self: stretch;
     background-color:rgba(255, 255, 255, 0.514);
     border-radius:5px;
+    padding-top:120px;
 }
 /*-------------GENERAL------------*/
 span{
     font-family: 'geosanslight';
     display: block;
     text-align:center;
-    font-size: 15px;
+    font-size: 20px;
 }
 .question{
     font-family: 'geosanslight';
     display:block;
     text-align: center;
     font-size: 30px;
+}
+a{
+    grid-column-start: four;
+    grid-column-end: five;
+    grid-row-start: six;
+    grid-row-end: auto;
+    padding-top:700px;
+    text-align: center;
+    font-family: 'geosanslight';
+    padding-bottom: 50px;
+    color:rgb(209, 123, 53);
 }

@@ -94,3 +94,10 @@ span{
 body{
     background-color: #DADADA;
 }
+a{
+    display: block;
+    text-align:right;
+    font-family: 'Sansation_Regular';
+    font-size:15px;  
+    color:#6B2497;
+}
